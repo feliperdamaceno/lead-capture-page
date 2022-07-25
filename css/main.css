@@ -1,7 +1,7 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Import =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 /* Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= General =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
@@ -9,14 +9,22 @@
   /* Font-Family */
   --ff-regular: "Rubik", sans-serif;
 
+  /* Font-Size */
+  --fs-700: 5.6rem;
+  --fs-600: 3.2rem;
+  --fs-500: 2.8rem;
+  --fs-400: 1.8rem;
+  --fs-300: 1.6rem;
+  --fs-200: 1.4rem;
+
   /* Font-Weight */
   --fw-bold: 700;
   --fw-regular: 400;
-  --fw-light: 300;
+  --fw-light: 200;
 
   /* Colors */
-  --black: #000;
-  --white: #fff;
+  --black: #1b1a17;
+  --white: #f6f6f6;
 }
 
 html {
@@ -31,10 +39,12 @@ html {
 }
 
 body {
+  background-color: var(--white);
   font-family: var(--ff-regular);
-  font-size: 1.6rem; /* Set the font-size to default 16px */
+  font-size: var(--fs-300); /* Set the font-size to default 16px */
   line-height: 1.5;
   min-height: 100vh;
+  margin: 0;
 }
 
 img {
@@ -44,7 +54,34 @@ img {
 
 button,
 input {
-  font-size: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.header {
+  background-color: var(--black);
+  box-shadow: 0 0 0.5rem 0 hsla(45, 8%, 10%, 0.8);
+}
+
+.navigation {
+  padding: 2rem;
+}
+
+.company-logo {
+  color: var(--white);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-500);
+}
+
+.company-logo > span {
+  font-weight: var(--fw-light);
+}
