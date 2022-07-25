@@ -1,0 +1,50 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Import =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap");
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= General =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+:root {
+  /* Font-Family */
+  --ff-regular: "Rubik", sans-serif;
+
+  /* Font-Weight */
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-light: 300;
+
+  /* Colors */
+  --black: #000;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%; /* Set the default rem to 10px */
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--ff-regular);
+  font-size: 1.6rem; /* Set the font-size to default 16px */
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
