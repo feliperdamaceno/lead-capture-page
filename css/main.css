@@ -69,8 +69,28 @@ img {
   width: 100%;
 }
 
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Components =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
 .hidden {
   display: none;
+}
+
+.button {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0.25em;
+  border: 0;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  padding-block: 0.5em;
+  padding-inline: 1.25em;
+  cursor: pointer;
+  transition: opacity ease-in-out 150ms;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.85;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
@@ -121,21 +141,7 @@ img {
 }
 
 .hero__button {
-  background-color: var(--black);
-  color: var(--white);
-  border-radius: 0.25em;
-  border: 0;
-  font-size: var(--fs-400);
-  font-weight: var(--fw-medium);
-  padding-block: 0.5em;
-  padding-inline: 1.25em;
-  cursor: pointer;
-  transition: opacity ease-in-out 200ms;
-}
-
-.hero__button:hover,
-.hero__button:focus {
-  opacity: 0.85;
+  display: inline-block;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Testimonial =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
@@ -193,4 +199,56 @@ img {
 
 .user__role {
   font-size: var(--fs-200);
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.footer {
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: var(--fs-500);
+  margin-bottom: 1rem;
+}
+
+.footer__description {
+  display: block;
+  font-size: var(--fs-200);
+  margin-bottom: 1rem;
+  opacity: 0.6;
+}
+
+.lead-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lead-form__input {
+  font-size: var(--fs-400);
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0.1rem solid var(--black);
+  background-color: rgba(173, 173, 173, 0.5); /* Temporary background*/
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  margin-bottom: 1rem;
+  transition: outline ease-out 150ms;
+}
+
+.lead-form__input:hover,
+.lead-form__input:focus {
+  outline: 0.25rem solid var(--black);
+}
+
+.lead-form__button {
+  align-self: center;
+}
+
+.lead-form__info {
+  display: block;
+  padding-top: 1rem;
+  opacity: 0.6;
 }
