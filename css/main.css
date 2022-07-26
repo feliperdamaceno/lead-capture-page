@@ -1,7 +1,7 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Import =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 /* Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= General =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
@@ -19,6 +19,7 @@
 
   /* Font-Weight */
   --fw-bold: 700;
+  --fw-medium: 500;
   --fw-regular: 400;
   --fw-light: 200;
 
@@ -123,4 +124,22 @@ img {
   margin-bottom: 2rem;
 }
 
-/* Continue here... */
+.hero__button {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0.25em;
+  border: 0;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  padding-block: 0.5em;
+  padding-inline: 1.25em;
+  cursor: pointer;
+  transition: opacity ease-in-out 200ms;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  opacity: 0.85;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Testimonial =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
