@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get your free ebook and learn more about our courses.">
     <title>Lead Capture Page</title>
 
     <!-- Bootstrap icons import -->
@@ -21,8 +22,8 @@
     <!-- Header -->
     <header class="header">
       <nav class="nav">
-        <a class="nav__logo" href="#">AWESOME<span>COURSES</span></a>
-        <ul class="hidden">
+        <a class="nav__logo" href="#" target="_blank" rel="author" aria-label="company logo" tabindex="1">AWESOME<span aria-label="company logo">COURSES</span></a>
+        <ul class="hidden" aria-hidden="true">
           <li><a href="#"><i class="bi bi-facebook"></i></a></li>
           <li><a href="#"><i class="bi bi-instagram"></i></a></li>
           <li><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -35,41 +36,41 @@
     <main class="main">
 
       <!-- Hero -->
-      <section class="hero">
-        <div class="hero__content">
-          <h1 class="hero__title">Your dreams begin here!</h1>
-          <p class="hero__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente atque quasi fuga nostrum fugiat necessitatibus.</p>
-          <a href="#" class="button hero__button">Join Free</a>
-        </div>
-      </section>
+      <article class="hero" aria-label="hero section" tabindex="2">
+        <section class="hero__content" aria-label="hero content">
+          <h1 class="hero__title" tabindex="3">Your dreams begin here!</h1>
+          <p class="hero__description" tabindex="4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente atque quasi fuga nostrum fugiat necessitatibus.</p>
+          <a href="#" class="button hero__button" target="_blank" rel="next" aria-label="join for free in our amazing courses." tabindex="5">Join Free</a>
+        </section>
+      </article>
 
       <!-- Testimonial -->
-      <section class="testimonial">
-        <div class="testimonial__content">
-          <blockquote class="testimonial__quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, suscipit!</blockquote>
-          <div class="user">
-            <img class="user__image" src="img/user-profile.svg" alt="">
-            <div>
+      <article class=" testimonial" aria-label="testimonial" tabindex="6">
+        <section class="testimonial__content" aria-label="testimonial content">
+          <blockquote class="testimonial__quote" tabindex="7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, suscipit!</blockquote>
+          <div class="user" aria-label="user who rated the course service" tabindex="8">
+            <img class="user__image" src="img/user-profile.svg" alt="user profile avatar">
+            <div aria-label="user info">
               <h2 class="user__name">Lorem Impsun</h2>
               <p class="user__role">Product Manager</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </article>
 
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer__content">
-        <h2 class="footer__title">Get your free ebook</h2>
-        <small class="footer__description">The ebook will be sent in your email.</small>
+      <section aria-label="free ebook download section" tabindex="9">
+        <h2 class="footer__title" tabindex="10">Get your free ebook</h2>
+        <small class="footer__description" tabindex="11">The ebook will be sent in your email.</small>
         <form class="lead-form" action="pages/submit.html">
-          <input class="lead-form__input" type="email" placeholder="Please enter your email here*" required>
-          <button class="button lead-form__button" type="submit">Download Here</button>
+          <input class="lead-form__input" type="email" placeholder="Please enter your email here" required tabindex="13">
+          <button class="button lead-form__button" type="submit" rel="next" aria-label="download submit button" tabindex="14">Download Here</button>
         </form>
-        <small class="lead-form__info">*We never share your email or send spam.</small>
-      </div>
+        <small class="lead-form__info" tabindex="12">We never share your email or send spam.</small>
+      </section>
     </footer>
 
   </body>

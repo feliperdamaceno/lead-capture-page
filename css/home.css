@@ -144,18 +144,22 @@
 .lead-form__input {
   background-color: rgba(173, 173, 173, 0.5); /* Temporary background*/
   border: 0;
+  outline: 0;
   border-radius: 0.25rem;
   font-size: var(--fs-400);
   width: 100%;
   padding-block: 1rem;
   padding-inline: 2rem;
   margin-bottom: 1rem;
-  transition: outline ease-in 50ms;
+  transition: background-color ease-in-out 150ms, box-shadow ease-in-out 150ms;
 }
 
-.lead-form__input:hover,
+.lead-form__input:hover {
+  background-color: rgba(173, 173, 173, 0.75);
+}
+
 .lead-form__input:focus {
-  outline: 0.2rem solid var(--black);
+  box-shadow: 0 0 0 0.2rem var(--black);
 }
 
 .lead-form__button {
@@ -187,13 +191,8 @@
   .lead-form {
     display: flex;
     align-items: center;
-    transition: outline ease-in 50ms;
-  }
-
-  .lead-form:hover,
-  .lead-form:focus {
     border-radius: 0.25rem;
-    outline: 0.2rem solid var(--black);
+    transition: box-shadow ease-in 50ms;
   }
 
   .lead-form__input {
