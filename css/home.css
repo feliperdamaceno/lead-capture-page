@@ -8,6 +8,7 @@
 .nav {
   padding-block: 1rem;
   padding-inline: 2rem;
+  text-align: center;
 }
 
 .nav__logo {
@@ -19,6 +20,31 @@
 .nav__logo > span {
   font-weight: var(--fw-light);
 }
+
+.nav__social-links {
+  padding: 0;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  margin-right: 2rem;
+  display: none;
+}
+
+.nav__link {
+  color: var(--white);
+  font-size: var(--fs-600);
+  display: inline-block;
+}
+
+.nav__link:hover {
+  opacity: 0.85;
+}
+
+.nav__link:active {
+  opacity: 0.2;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Social Media Button =-=-=-=-=-=-=-=-=-=-=-= */
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Main =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
@@ -175,6 +201,22 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Media Queries =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 @media screen and (min-width: 960px) {
+  /* =-=-=-=-= Header =-=-=-=-= */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__logo {
+    margin-left: 2rem;
+  }
+
+  .nav__social-links {
+    display: flex;
+  }
+
+  /* =-=-=-=-= Main =-=-=-=-= */
   .main {
     flex-direction: row;
   }
@@ -184,6 +226,7 @@
     width: 50vw;
   }
 
+  /* =-=-=-=-= Footer =-=-=-=-= */
   .footer {
     padding-block: 5rem;
   }
@@ -192,7 +235,6 @@
     display: flex;
     align-items: center;
     border-radius: 0.25rem;
-    transition: box-shadow ease-in 50ms;
   }
 
   .lead-form__input {

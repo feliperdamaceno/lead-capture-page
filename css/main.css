@@ -81,10 +81,6 @@ img {
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Components =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
-.hidden {
-  display: none;
-}
-
 .button {
   background-color: var(--black);
   color: var(--white);
