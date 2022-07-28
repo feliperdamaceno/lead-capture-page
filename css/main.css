@@ -10,7 +10,7 @@
   --ff-regular: "Rubik", sans-serif;
 
   /* Font-Size */
-  --fs-700: 4.2rem;
+  --fs-700: 4rem;
   --fs-600: 2.8rem;
   --fs-500: 2.4rem;
   --fs-400: 1.8rem;
@@ -24,10 +24,11 @@
   --fw-light: 200;
 
   /* Colors */
-  --primary: #07689f;
-  --accent: #37b7b5;
-  --dark: #232323;
-  --light: #fff;
+  --primary: #089191;
+  --secondary: #d5fbda;
+  --accent: #ea5d76;
+  --dark: #01161e;
+  --light: #ffffff;
 }
 
 html {
