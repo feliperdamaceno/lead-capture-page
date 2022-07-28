@@ -104,19 +104,19 @@
 }
 
 .testimonial__quote::before {
-  content: "\1F676";
-  font-size: var(--fs-600);
+  content: "\0022";
+  font-size: var(--fs-700);
   opacity: 0.6;
   position: absolute;
-  top: -2rem;
+  top: -2.5rem;
 }
 
 .testimonial__quote::after {
-  content: "\1F677";
-  font-size: var(--fs-600);
+  content: "\0022";
+  font-size: var(--fs-700);
   opacity: 0.6;
   position: absolute;
-  bottom: -3.25rem;
+  bottom: -4.75rem;
   right: 0;
 }
 
@@ -255,6 +255,8 @@
   color: var(--white);
   font-size: var(--fs-600);
   margin: 0;
+  min-width: 6rem;
+  aspect-ratio: 1/1;
   padding: 1.25rem;
   cursor: pointer;
   z-index: 1;
