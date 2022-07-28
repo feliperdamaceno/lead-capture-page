@@ -95,22 +95,28 @@
   position: relative;
 }
 
+.testimonial__quote::after,
 .testimonial__quote::before {
-  content: url("../img/quote.svg"); /* TODO: CHANGE COLOR */
-  opacity: 0.25;
-  position: absolute;
-  top: -2.5rem;
-  transform: rotate(5deg);
-}
-
-.testimonial__quote::after {
-  content: url("../img/quote.svg");
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 3rem;
   aspect-ratio: 1/1;
   opacity: 0.25;
   position: absolute;
+}
+
+.testimonial__quote::after {
+  background-image: url("../img/quote.svg");
   bottom: -2.5rem;
   right: -0.5rem;
   transform: rotate(-175deg);
+}
+
+.testimonial__quote::before {
+  background-image: url("../img/quote.svg");
+  top: -2.5rem;
+  transform: rotate(5deg);
 }
 
 .user {
