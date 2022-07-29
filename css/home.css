@@ -1,26 +1,13 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= General =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+body {
+  background-image: url("../img/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
-
-.header {
-  background-color: var(--primary);
-  box-shadow: 0 0 0.5rem 0 hsla(45, 8%, 10%, 0.9);
-}
-
-.nav {
-  text-align: center;
-  padding-block: 1rem;
-  padding-inline: 2rem;
-}
-
-.nav__logo {
-  color: var(--dark);
-  font-size: var(--fs-600);
-  font-weight: var(--fw-bold);
-}
-
-.nav__logo > span {
-  color: var(--light);
-  font-weight: var(--fw-light);
-}
 
 .nav__links {
   display: none;
@@ -29,20 +16,17 @@
 .social__link {
   color: var(--light);
   font-size: var(--fs-600);
+  transition: color ease-in-out 100ms, opacity ease-in-out 100ms;
 }
 
-.social__link:hover,
-.social__link:active {
-  /* TODO */
+.social__link:hover {
+  color: var(--dark);
+  opacity: 0.8;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Main =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 .main {
-  background-image: url("../img/background.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -182,12 +166,14 @@
   margin-bottom: 1rem;
 }
 
-.form__input:hover {
-  /* TODO */
+.form__input::placeholder {
+  color: var(--dark);
+  opacity: 0.25;
 }
 
-.form__input:focus {
-  /* TODO */
+.form__input:focus::placeholder {
+  color: var(--dark);
+  opacity: 0.5;
 }
 
 .form__button {
@@ -214,7 +200,7 @@
 .mobile-social-nav {
   background-color: var(--dark);
   border-radius: 0.25rem;
-  padding: 2rem;
+  padding: 1.5rem;
   opacity: 0;
   pointer-events: none;
   transform: scale(0);
@@ -239,31 +225,26 @@
   font-size: var(--fs-600);
 }
 
-.mobile-link:hover {
-  /* TODO */
-}
-
-.mobile-link:active {
-  /* TODO */
-}
-
 .mobile-social-button {
   background-color: var(--dark);
   color: var(--light);
   border: 0;
   border-radius: 50%;
-  font-size: var(--fs-600);
-  min-width: 6rem;
+  font-size: var(--fs-500);
+  width: 5rem;
   aspect-ratio: 1/1;
   margin: 0;
   padding: 1.25rem;
   z-index: 1;
   cursor: pointer;
+  display: grid;
+  place-items: center;
   box-shadow: 0 0.25rem 0.5rem 0 hsla(45, 8%, 10%, 0.5);
+  transition: transform ease-in-out 150ms;
 }
 
-.mobile-social-button:active {
-  /* TODO */
+.mobile-social-nav.social-menu-open + .mobile-social-button {
+  transform: rotate(-30deg);
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Media Queries =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -25,7 +25,6 @@
 
   /* Colors */
   --primary: #089191;
-  --secondary: #d5fbda;
   --accent: #ea5d76;
   --dark: #01161e;
   --light: #ffffff;
@@ -93,21 +92,40 @@ img {
 .button {
   border-radius: 0.25rem;
   border: 0;
-  outline: 0;
   font-size: var(--fs-400);
   font-weight: var(--fw-medium);
   padding-block: 1rem;
   padding-inline: 1.5rem;
   cursor: pointer;
-  transition: opacity ease-in-out 150ms, box-shadow ease-in-out 150ms;
+  transition: color ease-in-out 100ms;
 }
 
 .button:hover {
-  /* TODO */
+  color: var(--dark);
 }
 
-.button:focus {
-  /* TODO */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.header {
+  background-color: var(--primary);
+  box-shadow: 0 0 0.5rem 0 hsla(45, 8%, 10%, 0.9);
+}
+
+.nav {
+  text-align: center;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+.nav__logo {
+  color: var(--dark);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+}
+
+.nav__logo > span {
+  color: var(--light);
+  font-weight: var(--fw-light);
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Media Queries =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

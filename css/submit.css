@@ -1,21 +1,9 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
 .header {
-  background-color: var(--black);
-  box-shadow: var(--base-box-shadow);
+  text-align: center;
   padding-block: 1rem;
   padding-inline: 2rem;
-  text-align: center;
-}
-
-.nav__logo {
-  color: var(--white);
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-600);
-}
-
-.nav__logo > span {
-  font-weight: var(--fw-light);
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-= Main =-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
